@@ -1,0 +1,51 @@
+
+@font-face{
+  font-family:'Jameel Noori Nastaleeq';
+  src:url('../fonts/jameel-noori-nastaleeq.woff2') format('woff2');
+  font-display:swap;
+  unicode-range:U+0600-06FF,U+0750-077F,U+FB50-FDFF,U+FE70-FEFF,U+200C-200F;
+}
+
+.flash{background:#DFF0D8;color:#3F6B28;border:1px solid #CFE6C3;padding:12px 16px;border-radius:14px;margin-bottom:16px;font-weight:700;font-size:13.5px}
+.flash-error{background:#FADCC8;color:#9C3A15;border-color:#F3C4A8}
+.flash-error ul{margin:0;padding-inline-start:18px}
+
+.toolbar{display:flex;gap:10px;flex-wrap:wrap;align-items:center;margin-bottom:16px}
+.toolbar .input{width:auto;flex:1;min-width:160px}
+.toolbar select.input{flex:0 0 auto;min-width:130px}
+
+.input{width:100%;border:1.5px solid var(--line);background:#fff;border-radius:14px;padding:11px 14px;font-size:14px;color:var(--ink);outline:none;transition:.2s;min-width:0}
+.input:focus{border-color:var(--mocha2);box-shadow:0 0 0 3px rgba(192,133,82,.18)}
+textarea.input{min-height:90px;resize:vertical}
+.ur-input{font-family:'Jameel Noori Nastaleeq','Noto Nastaliq Urdu','Segoe UI',Tahoma,sans-serif;font-size:18px;line-height:2}
+
+.btn-sm{padding:7px 12px;font-size:12.5px;border-radius:11px}
+.btn-danger{background:#fff;color:#B5451B;border:1.5px solid #F3C4A8}
+.btn-danger:hover{background:#FADCC8}
+.btn.disabled{opacity:.45;pointer-events:none}
+
+.t-off{background:#EEE6DC;color:#8A7A6A}
+.row-actions{display:flex;gap:8px;align-items:center}
+.cell-sub{display:block;font-size:11.5px;color:var(--muted);margin-top:2px}
+
+.pager{display:flex;align-items:center;justify-content:center;gap:14px;margin-top:16px;font-size:13px;color:var(--muted);font-weight:700}
+
+.form-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.field.full{grid-column:1/-1}
+.field label{display:block;font-size:12.5px;font-weight:800;color:#6B5D4F;margin-bottom:6px}
+.field label i{color:var(--terracotta);font-style:normal}
+.field .hint{display:block;font-size:11.5px;color:var(--muted);margin-top:5px}
+.field label.check{display:flex;align-items:center;gap:8px;font-size:13.5px;margin:0}
+.form-actions{display:flex;gap:10px;margin-top:22px;flex-wrap:wrap}
+
+@media(max-width:700px){.form-grid{grid-template-columns:1fr}}
+
+/* Urdu (RTL) mein chhoti tabdeeliyan */
+html[dir="rtl"] .input{font-size:16px}
+html[dir="rtl"] .field label{font-size:14px}
+html[dir="rtl"] .field .hint{font-size:13px}
+html[dir="rtl"] .btn-sm{font-size:14px}
+html[dir="rtl"] .pager{font-size:14px}
+html[dir="rtl"] .cell-sub{font-size:13px}
+.checks{display:flex;gap:12px 28px;flex-wrap:wrap}
+select.input{cursor:pointer}

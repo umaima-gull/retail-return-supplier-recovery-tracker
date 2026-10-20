@@ -1,0 +1,60 @@
+/* ===== Jameel Noori Nastaleeq (public/fonts/ se load hota hai, internet ki zaroorat nahi) ===== */
+@font-face{
+  font-family:'Jameel Noori Nastaleeq';
+  src:url('../fonts/jameel-noori-nastaleeq.woff2') format('woff2');
+  font-weight:normal;
+  font-style:normal;
+  font-display:swap;
+  /* sirf Urdu/Arabic huroof is font se, English/numbers pehle wale font se */
+  unicode-range:U+0600-06FF,U+0750-077F,U+FB50-FDFF,U+FE70-FEFF,U+200C-200F;
+}
+
+/* ===== Urdu / RTL overrides - sirf Urdu mode mein load hoti hai ===== */
+html[dir="rtl"] *{
+  font-family:'Jameel Noori Nastaleeq','Noto Nastaliq Urdu','Segoe UI',Tahoma,system-ui,sans-serif;
+  font-synthesis:none;               /* Nastaliq par nakli bold achi nahi lagti */
+}
+html[dir="rtl"] body{font-size:16px;line-height:2.1}
+
+/* Nastaliq ke huroof lambe hote hain, is liye line-height barhai */
+html[dir="rtl"] h1,html[dir="rtl"] h2,html[dir="rtl"] h3,
+html[dir="rtl"] p,html[dir="rtl"] span,html[dir="rtl"] small,
+html[dir="rtl"] a,html[dir="rtl"] td,html[dir="rtl"] th,
+html[dir="rtl"] button,html[dir="rtl"] b{line-height:2}
+
+/* Urdu mein letter-spacing huroof ka jorr tor deti hai */
+html[dir="rtl"] .nav-label,
+html[dir="rtl"] th,
+html[dir="rtl"] .stat h3{letter-spacing:0}
+
+html[dir="rtl"] .nav a{font-size:16px}
+html[dir="rtl"] .nav-label{font-size:13px}
+html[dir="rtl"] th{font-size:13.5px;text-align:right}
+html[dir="rtl"] .stat h3{font-size:14.5px}
+html[dir="rtl"] .alert p,
+html[dir="rtl"] .topbar p{font-size:14px}
+
+/* Sidebar daayen taraf */
+html[dir="rtl"] .sidebar{border-right:none;border-left:1px solid var(--line)}
+html[dir="rtl"] .nav a:hover{transform:translateX(-3px)}
+html[dir="rtl"] .alert:hover{transform:translateX(-4px)}
+html[dir="rtl"] .alert .when{margin-left:0;margin-right:auto}
+html[dir="rtl"] .stat::after{right:auto;left:-40px}
+html[dir="rtl"] .legend i{margin-right:0;margin-left:6px}
+/* Jameel Noori chhota nazar aata hai, is liye chhote labels bade kiye */
+html[dir="rtl"] .tag{font-size:14px;padding:2px 12px}
+html[dir="rtl"] .pill{font-size:14px}
+html[dir="rtl"] .panel-head span{font-size:14px}
+html[dir="rtl"] .alert .when{font-size:14px}
+html[dir="rtl"] .logo span{font-size:13px}
+html[dir="rtl"] .legend span,
+html[dir="rtl"] .break .row,
+html[dir="rtl"] .donut .hole small{font-size:14.5px}
+html[dir="rtl"] .bar-g small{font-size:13px}
+/* Chart ke mahine left-to-right hi rahein */
+html[dir="rtl"] .bars{direction:ltr}
+
+@media(max-width:880px){
+html[dir="rtl"] .sidebar{left:auto;right:0;transform:translateX(108%)}
+html[dir="rtl"] .sidebar.open{transform:translateX(0)}
+}

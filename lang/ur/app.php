@@ -1,0 +1,87 @@
+<?php
+
+return [
+    'brand_tagline' => 'ریٹیل ریٹرن ریکوری',
+    'menu_main'     => 'مین مینو',
+    'menu_manage'   => 'انتظام اور تجزیہ',
+
+    'nav' => [
+        'dashboard'        => 'ڈیش بورڈ',
+        'products'         => 'پروڈکٹس',
+        'suppliers'        => 'سپلائرز',
+        'damaged'          => 'خراب پروڈکٹس',
+        'expiry'           => 'ایکسپائری کا انتظام',
+        'customer_returns' => 'گاہکوں کی واپسی',
+        'supplier_returns' => 'سپلائر کو واپسی',
+        'recovery'         => 'وصولی کا ریکارڈ',
+        'reports'          => 'رپورٹس اور تجزیہ',
+        'reminders'        => 'فالو اپ یاددہانیاں',
+        'settings'         => 'ترتیبات',
+    ],
+
+    'switch_to'    => 'English',
+    'top_title_a'  => 'آپ کی دکان ',
+    'top_title_em' => 'ایک نظر میں',
+    'welcome'      => 'خوش آمدید! یہ آج کی واپسی اور وصولی کی مختصر رپورٹ ہے۔',
+    'export'       => 'ایکسپورٹ',
+    'create_claim' => 'واپسی کلیم بنائیں',
+
+    'stat_products'  => 'کل پروڈکٹس',
+    'stat_expired'   => 'ایکسپائر شدہ پروڈکٹس',
+    'stat_pending'   => 'زیر التواء کلیمز',
+    'stat_recovered' => 'وصول شدہ رقم',
+    'units'          => ':count یونٹس',
+    'new_this_month' => '▲ اس ماہ :count نئی',
+    'urgent'         => ':count فوری',
+    'overdue'        => ':count تاخیر کا شکار',
+    'trend_up'       => '▲ اس ماہ :pct%',
+    'trend_down'     => '▼ اس ماہ :pct%',
+    'trend_new_rec'  => '▲ اس ماہ نئی وصولیاں',
+    'trend_no_rec'   => 'اس ماہ ابھی کوئی وصولی نہیں',
+
+    'activity_title'   => 'واپسی اور وصولی کی سرگرمی',
+    'activity_sub'     => 'جمع کرائے گئے کلیمز اور کامیابی سے وصول شدہ',
+    'legend_claims'    => 'کلیمز',
+    'legend_recovered' => 'وصول شدہ',
+
+    'summary_title' => 'وصولی کا خلاصہ',
+    'summary_sub'   => 'کلیمز کی کل مالیت کی تقسیم',
+    'recovery_rate' => 'وصولی کی شرح',
+    'refund'        => 'رقم واپس مل گئی',
+    'replacement'   => 'متبادل مال',
+    'pending'       => 'زیر التواء',
+    'rejected'      => 'مسترد',
+
+    'claims_title' => 'حالیہ سپلائر کلیمز',
+    'claims_sub'   => 'تازہ ترین واپسی کی درخواستیں',
+    'view_all'     => 'سب دیکھیں',
+    'th_product'   => 'پروڈکٹ',
+    'th_claim'     => 'کلیم نمبر',
+    'th_supplier'  => 'سپلائر',
+    'th_value'     => 'مالیت',
+    'th_status'    => 'حالت',
+    'no_claims'    => 'ابھی کوئی کلیم نہیں',
+    'more'         => '+:count مزید',
+
+    'status' => [
+        'draft'       => 'مسودہ',
+        'pending'     => 'زیر التواء',
+        'in_progress' => 'کارروائی جاری',
+        'approved'    => 'منظور شدہ',
+        'completed'   => 'مکمل',
+        'rejected'    => 'مسترد',
+    ],
+
+    'alerts_title' => 'آپ کی توجہ درکار ہے',
+    'alerts_sub'   => 'ایکسپائری الرٹس اور فالو اپ',
+    'alerts_count' => ':count الرٹس',
+    'no_alerts'    => 'فی الحال کسی چیز پر توجہ درکار نہیں۔',
+    'today'        => 'آج',
+    'days_late'    => '{1} :count دن لیٹ|[2,*] :count دن لیٹ',
+    'in_days'      => '{1} :count دن|[2,*] :count دن',
+
+    'months' => [
+        1 => 'جنوری', 2 => 'فروری', 3 => 'مارچ', 4 => 'اپریل', 5 => 'مئی', 6 => 'جون',
+        7 => 'جولائی', 8 => 'اگست', 9 => 'ستمبر', 10 => 'اکتوبر', 11 => 'نومبر', 12 => 'دسمبر',
+    ],
+];
