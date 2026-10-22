@@ -28,4 +28,8 @@ return [
         'v_unique'   => 'This :attribute is already in use.',
     'v_numeric'  => 'The :attribute must be a number.',
     'v_exists'   => 'The selected :attribute is not valid.',
-];
+        'v_date'     => 'The :attribute is not a valid date.',
+    'v_image'    => 'The :attribute must be a JPG, PNG or WEBP image.',
+    'v_future'   => 'The :attribute cannot be a future date.',
+    'v_after'    => 'The :attribute must be on or after :date.',
+    ];

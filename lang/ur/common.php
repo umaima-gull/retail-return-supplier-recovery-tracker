@@ -28,4 +28,8 @@ return [
         'v_unique'   => 'یہ :attribute پہلے سے استعمال میں ہے۔',
     'v_numeric'  => ':attribute عدد ہونا چاہیے۔',
     'v_exists'   => 'منتخب کردہ :attribute درست نہیں۔',
+        'v_date'     => ':attribute درست تاریخ نہیں ہے۔',
+    'v_image'    => ':attribute JPG، PNG یا WEBP تصویر ہونی چاہیے۔',
+    'v_future'   => ':attribute مستقبل کی تاریخ نہیں ہو سکتی۔',
+        'v_after'    => ':attribute، :date کے برابر یا اس کے بعد کی ہونی چاہیے۔',
 ];

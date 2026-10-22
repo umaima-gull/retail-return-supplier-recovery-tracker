@@ -21,10 +21,10 @@
 <a class="{{ request()->routeIs('dashboard') ? 'active' : '' }}" href="{{ route('dashboard') }}"><span class="ico">&#9638;</span> {{ __('app.nav.dashboard') }}</a>
 <a class="{{ request()->routeIs('products.*') ? 'active' : '' }}" href="{{ route('products.index') }}"><span class="ico">&#9636;</span> {{ __('app.nav.products') }}</a>
 <a class="{{ request()->routeIs('suppliers.*') ? 'active' : '' }}" href="{{ route('suppliers.index') }}"><span class="ico">&#9776;</span> {{ __('app.nav.suppliers') }}</a>
-<a href="#"><span class="ico">&#8617;</span> {{ __('app.nav.damaged') }}</a>
-<a href="#"><span class="ico">&#8987;</span> {{ __('app.nav.expiry') }}</a>
-<a href="#"><span class="ico">&#10227;</span> {{ __('app.nav.customer_returns') }}</a>
-<a href="#"><span class="ico">&#8646;</span> {{ __('app.nav.supplier_returns') }}</a>
+<a class="{{ request()->routeIs('damaged-products.*') ? 'active' : '' }}" href="{{ route('damaged-products.index') }}"><span class="ico">&#8617;</span> {{ __('app.nav.damaged') }}</a>
+<a class="{{ request()->routeIs('expiry.*') ? 'active' : '' }}" href="{{ route('expiry.index') }}"><span class="ico">&#8987;</span> {{ __('app.nav.expiry') }}</a>
+<a class="{{ request()->routeIs('customer-returns.*') ? 'active' : '' }}" href="{{ route('customer-returns.index') }}"><span class="ico">&#10227;</span> {{ __('app.nav.customer_returns') }}</a>
+<a class="{{ request()->routeIs('supplier-returns.*') ? 'active' : '' }}" href="{{ route('supplier-returns.index') }}"><span class="ico">&#8646;</span> {{ __('app.nav.supplier_returns') }}</a>
 <a href="#"><span class="ico">&#9678;</span> {{ __('app.nav.recovery') }}</a>
 </nav>
 <div class="nav-label">{{ __('app.menu_manage') }}</div>

@@ -1,0 +1,76 @@
+<?php
+
+return [
+    'title'    => 'Customer Returns',
+    'subtitle' => 'Record items customers bring back, the refund given, and what to do next.',
+    'form_sub' => 'Fill in the return details below.',
+    'add'      => 'Add Return',
+    'edit'     => 'Edit Return',
+    'saved'    => 'Customer return saved successfully.',
+    'updated'  => 'Customer return updated successfully.',
+    'deleted'  => 'Customer return deleted.',
+
+    'stat_records'        => 'TOTAL RETURNS',
+    'stat_records_sub'    => 'all time',
+    'stat_refunded'       => 'REFUNDED TO CUSTOMERS',
+    'stat_refunded_sub'   => 'money given back',
+    'stat_resalable'      => 'RESALABLE UNITS',
+    'stat_resalable_sub'  => 'can go back on the shelf',
+    'stat_claimable'      => 'TO CLAIM FROM SUPPLIER',
+    'stat_claimable_sub'  => 'not resalable, no claim yet',
+
+    'th_return'   => 'RETURN',
+    'th_product'  => 'PRODUCT',
+    'th_customer' => 'CUSTOMER',
+    'th_qty'      => 'QTY',
+    'th_reason'   => 'REASON',
+    'th_refund'   => 'REFUND',
+    'th_claim'    => 'CLAIM',
+
+    'all_reasons'    => 'All reasons',
+    'all_conditions' => 'All conditions',
+    'all_status'     => 'All status',
+    'select'         => '— Select product —',
+
+    'reason' => [
+        'damaged'       => 'Damaged',
+        'expired'       => 'Expired',
+        'defective'     => 'Defective',
+        'wrong_item'    => 'Wrong item',
+        'quality_issue' => 'Quality issue',
+        'other'         => 'Other',
+    ],
+    'condition' => [
+        'resalable'     => 'Resalable',
+        'not_resalable' => 'Not resalable',
+    ],
+    'method' => [
+        'cash'         => 'Cash',
+        'card'         => 'Card',
+        'exchange'     => 'Exchange',
+        'store_credit' => 'Store credit',
+    ],
+    'status' => [
+        'received'     => 'Received',
+        'claim_raised' => 'Claim raised',
+        'closed'       => 'Closed',
+    ],
+
+    'f_return_no'      => 'Return No.',
+    'f_product_id'     => 'Product',
+    'f_qty'            => 'Quantity returned',
+    'f_returned_at'    => 'Return date',
+    'f_reason'         => 'Reason',
+    'f_item_condition' => 'Condition of item',
+    'f_refund_amount'  => 'Refund amount (Rs)',
+    'f_refund_method'  => 'Refund method',
+    'f_customer_name'  => 'Customer name',
+    'f_customer_phone' => 'Customer phone',
+    'f_invoice_no'     => 'Invoice no.',
+    'f_status'         => 'Status',
+    'f_notes'          => 'Notes',
+    'f_restock'        => 'Add this quantity back to product stock',
+
+    'hint_refund'  => 'Leave empty to calculate automatically (quantity × sale price).',
+    'hint_restock' => 'Works only when the item is "Resalable", and only for a new record.',
+];

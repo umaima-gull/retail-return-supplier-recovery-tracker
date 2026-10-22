@@ -49,3 +49,24 @@ html[dir="rtl"] .pager{font-size:14px}
 html[dir="rtl"] .cell-sub{font-size:13px}
 .checks{display:flex;gap:12px 28px;flex-wrap:wrap}
 select.input{cursor:pointer}
+.prod{display:flex;align-items:center;gap:10px}
+.thumb{width:42px;height:42px;border-radius:10px;object-fit:cover;border:1px solid var(--line);display:block}
+.thumb-lg{width:110px;height:110px;border-radius:14px;object-fit:cover;border:1px solid var(--line);display:block}
+input[type=file].input{padding:9px 12px;background:#fff}
+/* Supplier Returns (claims) */
+.stack>.panel+.panel{margin-top:20px}
+.split{display:grid;grid-template-columns:1.5fr 1fr;gap:20px;align-items:start}
+.split>div>.panel+.panel{margin-top:20px}
+@media(max-width:980px){.split{grid-template-columns:1fr}}
+.detail-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:18px}
+.detail-grid .k{font-size:11.5px;color:var(--muted);font-weight:800;letter-spacing:.04em}
+.detail-grid .v{font-size:15px;font-weight:700;margin-top:4px}
+.group-title{font-weight:800;margin:20px 0 10px;font-size:14.5px;color:#6B5D4F}
+.check-cell{width:36px}
+.timeline{list-style:none;margin:0;padding:0}
+.timeline li{padding:11px 0;border-bottom:1px solid var(--line);font-size:13.5px}
+.timeline li:last-child{border-bottom:0}
+.timeline li small{display:block;color:var(--muted);font-size:12px;margin-top:3px}
+html[dir="rtl"] .detail-grid .k{letter-spacing:0;font-size:13.5px}
+html[dir="rtl"] .group-title{font-size:16px}
+html[dir="rtl"] .timeline li{font-size:14.5px}
